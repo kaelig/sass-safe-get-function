@@ -4,6 +4,14 @@
 
 First-class functions were introduced in Sass 3.5.0, deprecating `call($name)` in favor of `call(get-function($name))`. The official recommendation is to update your code to use `get-function` right away to get ready for Sass 4.0.0, which unfortunately breaks in older versions of Sass. `safe-get-function` was created to allow authors to write code compatible with older and future versions at the same time.
 
+## Usage
+
+```scss
+h1 {
+  content: call(safe-get-function($name), $arguments...);
+}
+```
+
 ## Get Started
 
 ### 1. Get the code
