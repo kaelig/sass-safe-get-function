@@ -1,8 +1,10 @@
 # Safe `get-function()` for Sass [![Build Status](https://travis-ci.org/kaelig/sass-safe-get-function.svg?branch=master)](https://travis-ci.org/kaelig/sass-safe-get-function)
 
-`safe-get-function` is a utility that helps you write code compatible with Sass 3.3.x, 3.4.x, 3.5.x and up, as well as node-sass. It is particularly useful to authors of libraries, frameworks and advanced Sass utilities.
+`safe-get-function` is a utility that allows you to write code using `get-function` today. It is particularly useful to authors of libraries, frameworks and other utilities who want to make their code compatible with past, present and future versions of Sass.
 
-First-class functions were introduced in Sass 3.5.0, deprecating `call($name)` in favor of `call(get-function($name))`. The official recommendation is to update your code to use `get-function` right away to get ready for Sass 4.0.0, which unfortunately breaks in older versions of Sass. `safe-get-function` was created to allow authors to write code compatible with older and future versions at the same time.
+`call($name)` is deprecated in favor of `call(get-function($name))` with the introduction of first-class functions in Sass 3.5.0.
+
+[The official recommendation](http://blog.sass-lang.com/posts/809572-sass-35-release-candidate) is to update your code to get ready for Sass 4.0.0 and use `get-function` as soon as Sass 3.5.0 is released. Not only you'd have to wait for Sass 3.5.0 to get released, but you'd also be writing code that doesn't work in older versions of Sass. `safe-get-function` was created to allow authors to write code compatible with older and future versions at the same time.
 
 ## Usage
 
@@ -16,14 +18,16 @@ h1 {
 
 ### 1. Get the code
 
+You have a few options:
+
 - A good ol’ copy-paste of [index.scss](index.scss) to your codebase
-- or npm `npm install sass-safe-get-function --save`
+- or using npm `npm install sass-safe-get-function --save`
 - or even bower `bower install kaelig/sass-safe-get-function --save`
 
 ### 2. Import the partial
 
 ```scss
-@import 'path/to/sass-get-function/index.scss';
+@import 'path/to/sass-safe-get-function/index.scss';
 ```
 
 ### 3. Profit
