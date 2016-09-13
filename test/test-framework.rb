@@ -20,7 +20,7 @@ $test_error_file ||= "test/output.css"
 $sass = Open3.capture3("node-sass #{$test_file} --stdout --output-style=compressed")
 $output = $sass[0]
 $errors = $sass[1]
-puts "Running node-sass #{$test_file} --stdout --style compressed"
+puts "Running node-sass #{$test_file} --stdout --output-style compressed"
 $global_failure_count = 0
 
 module Kernel
@@ -79,7 +79,7 @@ class Executor
     puts "#{@tests.keys.size} tests, #{@success_count} success, #{@failure_count} failure"
 
     if @failure_count > 0
-      stdout, stderr, status = Open3.capture3 "node-sass #{$test_file} #{$test_error_file} --include-path bower_components --output-style=compressed"
+      stdout, stderr, status = Open3.capture3 "node-sass #{$test_file} #{$test_error_file} --include-path bower_components"
     end
   end
 end

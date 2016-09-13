@@ -23,7 +23,7 @@ describe "Calling safe-get-function()" do
     find "h1{content:\"bar\"}"
   end
   it "should output the same thing in Sass 3.5.0 and LibSass 3.8.x" do
-    FileUtils.compare_file('test/output-ruby-sass.css', 'test/output.css')
+    File.read('test/output-ruby-sass.css').strip! === $output.strip!
   end
 end
 
