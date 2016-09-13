@@ -73,4 +73,4 @@ npm test
 
 ## Acknowledgments
 
-Thank you to @chriseppstein for inspiring this library.
+Thank you to [@chriseppstein](https://github.com/chriseppstein) for inspiring this library.
