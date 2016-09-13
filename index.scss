@@ -1,0 +1,13 @@
+/// Safe get-function($name)
+///
+/// @param {String} $name - Name of the function
+@function safe-get-function($name) {
+  @if (type-of($name) != 'string') {
+    @error 'The parameter passed to safe-get-function() must be a String. Good: safe-get-function('foo') / Bad: safe-get-function(5).';
+  }
+  @if function-exists('get-function') {
+    @return get-function($name);
+  } @else {
+    @return $name;
+  }
+}

@@ -1,0 +1,7 @@
+@import '../index';
+
+@function foo($x) { @return $x; }
+
+h1 {
+  content: call(safe-get-function('foo'), 'bar');
+}

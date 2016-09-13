@@ -1,0 +1,5 @@
+@import '../index';
+
+.not-a-string {
+  content: call(safe-get-function(5));
+}

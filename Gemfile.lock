@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.9.14)
+    rb-fsevent (0.9.7)
+    rb-inotify (0.9.7)
+      ffi (>= 0.5.0)
+    sass (3.5.0.pre.rc.1)
+      sass-listen (~> 3.0.7)
+    sass-listen (3.0.7)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  sass (~> 3.5.0.pre.rc.1)
+
+BUNDLED WITH
+   1.10.6

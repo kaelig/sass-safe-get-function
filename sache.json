@@ -1,0 +1,5 @@
+{
+  "name": "sass-safe-get-function",
+  "description": "A safe get-function that works in Sass 3.3.x and up",
+  "tags": ["compatibility", "call"]
+}

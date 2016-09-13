@@ -1,0 +1,39 @@
+{
+  "name": "sass-safe-get-function",
+  "version": "1.0.0",
+  "description": "A safe get-function that works in Sass 3.3.x and up",
+  "keywords": [
+    "sass",
+    "eyeglass-module"
+  ],
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kaelig/sass-safe-get-function.git"
+  },
+  "author": "ACME Inc.",
+  "scripts": {
+    "pretest": "bundle exec sass test/test.scss test/output-ruby-sass.css --sourcemap=none --style=compressed",
+    "test": "./test/spec.rb",
+    "preinstall": "bundle install --path vendor/bundle"
+  },
+  "files": [
+    "index.scss",
+    "README.md"
+  ],
+  "main": "index.scss",
+  "ignore": [
+    "test",
+    "sassdoc",
+    "**/.*",
+    "assets"
+  ],
+  "eyeglass": {
+    "needs": "^0.8.2",
+    "sassDir": "./index.scss",
+    "exports": false
+  },
+  "devDependencies": {
+    "node-sass": "~3.9.3"
+  }
+}
