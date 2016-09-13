@@ -2,7 +2,7 @@
 
 `safe-get-function` is a utility that allows you to write code using `get-function` today. It is particularly useful to authors of libraries, frameworks and other utilities who want to make their code compatible with past, present and future versions of Sass.
 
-`call($name)` is deprecated in favor of `call(get-function($name))` with the introduction of first-class functions in Sass 3.5.0.
+`call($name)` is deprecated in favor of `call(get-function($name))` with [the introduction of first-class functions in Sass 3.5.0](https://medium.com/@kaelig/sass-first-class-functions-6e718e2b5eb0).
 
 [The official recommendation](http://blog.sass-lang.com/posts/809572-sass-35-release-candidate) is to update your code to get ready for Sass 4.0.0 and use `get-function` as soon as Sass 3.5.0 is released. Not only you'd have to wait for Sass 3.5.0 to get released, but you'd also be writing code that doesn't work in older versions of Sass. `safe-get-function` was created to allow authors to write code compatible with older and future versions at the same time.
 
@@ -70,6 +70,10 @@ gem install bundler
 npm install
 npm test
 ```
+
+## Resources
+
+- [Making sense out of Sass 3.5.0 first-class functions](https://medium.com/@kaelig/sass-first-class-functions-6e718e2b5eb0) on Medium
 
 ## Acknowledgments
 
