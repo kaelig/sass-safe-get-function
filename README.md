@@ -8,7 +8,7 @@ First-class functions were introduced in Sass 3.5.0, deprecating `call($name)` i
 
 ### 1. Get the code
 
-- A good ol’ copy-paste of [download index.scss](index.scss)
+- A good ol’ copy-paste of [index.scss](index.scss) to your codebase
 - or npm `npm install sass-safe-get-function --save`
 - or even bower `bower install kaelig/sass-safe-get-function --save`
 
