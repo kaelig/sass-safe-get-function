@@ -1,5 +1,7 @@
 # Safe `get-function()` for Sass [![Build Status](https://travis-ci.org/kaelig/sass-safe-get-function.svg?branch=master)](https://travis-ci.org/kaelig/sass-safe-get-function)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kaelig/sass-safe-get-function.svg)](https://greenkeeper.io/)
+
 `safe-get-function` is a utility that allows you to write code using `get-function` today. It is particularly useful to authors of libraries, frameworks and other utilities who want to make their code compatible with past, present and future versions of Sass.
 
 `call($name)` is deprecated in favor of `call(get-function($name))` with [the introduction of first-class functions in Sass 3.5.0](https://medium.com/@kaelig/sass-first-class-functions-6e718e2b5eb0).
