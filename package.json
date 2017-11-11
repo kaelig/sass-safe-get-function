@@ -34,6 +34,6 @@
     "exports": false
   },
   "devDependencies": {
-    "node-sass": "~4.5.2"
+    "node-sass": "~4.6.1"
   }
 }
